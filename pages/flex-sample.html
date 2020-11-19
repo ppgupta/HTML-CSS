@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>codePen - Demo Flexbox 3</title>
+        <style>
+            body{padding: 2em;}
+            
+            .headerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .mainContainer{
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+            .footerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .mainContentItem{
+                text-align: left;
+                background: deepskyblue;
+                flex: 3 0px;
+                order: 2;
+            }
+            .sideBarItem{
+                flex: 1 0 0;
+                border: 0px solid green;
+            }
+            .sideBarLeftItem{
+                background: gold;
+                order: 1;
+            }
+            .sideBarRightItem{
+                background: hotpink;
+                order: 3;
+            }
+            article{
+                padding: 10px;
+                margin: 10px;
+                background: aqua;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header class = "headerContainer">
+            <h1>
+            HEADER - Sample Flexbox Example
+            </h1>
+        </header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>First article</h2>
+                    <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter.</p>
+                </article>
+                <article>
+                    <h2>Second article</h2>
+                    <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter.</p>
+                </article>
+                <article>
+                    <h2>Third article</h2>
+                    <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter.</p>
+                </article>
+            </section>
+            <sidebar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sidebar>
+            <sidebar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sidebar>
+        </div>
+        <footer class="footerContainer">Footer</footer>
+    </body>
+</html>
